@@ -32,9 +32,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun calculateTip() {
 
-        val serviceText = binding.costOfService.text.toString()
+        val serviceText = binding.costOfServiceEditText.text.toString()
         if (serviceText.isNotEmpty()) {
-
             val serviceValue = serviceText.toDouble()
             val tip = when (binding.radioGroup.checkedRadioButtonId) {
                 R.id.option_twenty -> 0.20
